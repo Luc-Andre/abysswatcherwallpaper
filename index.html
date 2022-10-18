@@ -153,7 +153,9 @@
   <body class="disable-dbl-tap-zoom">
     <div id="video-bg">
       <video id="vid" muted autoplay loop>
-            <source type="video/mp4" src="ressources/movie.mp4">
+	    <!-- disabled for demo purpose on github pages -->
+            <!--<source type="video/mp4" src="ressources/movie.mp4">-->
+	      <source type="video/mp4" src="https://cdn-cf-east.streamable.com/video/mp4/0z2xyl.mp4?Expires=1666367760&Signature=IsmB5AkzlntmfujHPaEf6UAOquGT2HR26z~i0yX~R0j09B68XZRgdBg-ag8OIrRTuP-lF2bQJrPwsIaWT4BiotZ6lB8XCT~z-rcXnTwmiqRsLGrkTkeQpPHCnooEZ35PTDZDMBrTZ5hOqKFqehidSgfsfgtQADOZaNvXV3nHlgn8u-0i1wpgAo8wj48Ltx83DNwfUV7HevaXCdwo1BSQMgVkdyztkZ3FNJk0px4cobfnUCP~qQUWkY~SK9kfueP61YmfqRyCQa2iXKFzFm5js3AKjeSnqpDeSRsRBMrlTaVUL20Dv9xanho3i7~7O-mRAMJgME53rFVnGeusSPnjvQ__&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ">
       </video>
       <audio id ="audio" src="ressources/sound.ogg" loop>
     	<p>If you are reading this, it is because your browser does not support the audio element.     </p>
@@ -318,10 +320,12 @@
                 }
                 if(newScreenSize != currentScreenSize){
                     if(newScreenSize == 'portrait'){
-                        document.getElementById("vid").src = 'ressources/phonemovie.mp4';
+                        //document.getElementById("vid").src = 'ressources/phonemovie.mp4';
+			document.getElementById("vid").src = 'https://cdn-cf-east.streamable.com/video/mp4/ctqcll.mp4?Expires=1666367760&Signature=Qpf1EygXpacRHd7R0IzFnWFIAX1ZuZFGFMtotahEh5tm2JQMjUox0ktY~N-sEDDZd7WjsGXzK5aiZRy2FoRd44R8fI-SCVGVePZm6RhNAY7MlU2lPHO~f3aPfaMcXUutDycbcbvtDrWXBmixuAWlhHUw5n--9yj2CNvrP-yn4nec-mMk1Y8zuYpJNzy9GSgXOjIZ81RTNhM0VmYksK97Fx37-7cB-oSa8Kt91OuOc7nEZqUXUDNAu0sc1PjtoRaD5B9gVTLdkXwWaFaG4BK2c6sdwbzERB3F6g8EbnFI3CIT72cq~Wn3A-JaUeAVSjUV0MSJzEfs0gqAt5Ma61nvUA__&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ';
                         currentScreenSize = 'portrait';
                     }else{
-                        document.getElementById("vid").src = 'ressources/movie.mp4';
+                        //document.getElementById("vid").src = 'ressources/movie.mp4';
+			document.getElementById("vid").src = 'https://cdn-cf-east.streamable.com/video/mp4/0z2xyl.mp4?Expires=1666367760&Signature=IsmB5AkzlntmfujHPaEf6UAOquGT2HR26z~i0yX~R0j09B68XZRgdBg-ag8OIrRTuP-lF2bQJrPwsIaWT4BiotZ6lB8XCT~z-rcXnTwmiqRsLGrkTkeQpPHCnooEZ35PTDZDMBrTZ5hOqKFqehidSgfsfgtQADOZaNvXV3nHlgn8u-0i1wpgAo8wj48Ltx83DNwfUV7HevaXCdwo1BSQMgVkdyztkZ3FNJk0px4cobfnUCP~qQUWkY~SK9kfueP61YmfqRyCQa2iXKFzFm5js3AKjeSnqpDeSRsRBMrlTaVUL20Dv9xanho3i7~7O-mRAMJgME53rFVnGeusSPnjvQ__&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ';
                         currentScreenSize = 'landscape';
                     }
                 }
